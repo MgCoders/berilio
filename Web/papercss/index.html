@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Rescate Animal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../mycss/style.css" media="screen">
+    <link rel="stylesheet" href="./bootstrap.css" media="screen">
+    <link rel="stylesheet" href="../papercss/assets/css/bootswatch.min.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../papercss/bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../papercss/bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+      <script type="application/javascript">
+          $(document).ready(function(e){
+              $('.search-panel .dropdown-menu').find('a').click(function(e) {
+                  e.preventDefault();
+                  var param = $(this).attr("href").replace("#","");
+                  var concept = $(this).text();
+                  $('.search-panel span#search_concept').text(concept);
+                  $('.input-group #search_param').val(param);
+              });
+          });
+
+      </script>
+  </head>
+  <style type="text/css">
+      body{
+          margin-top:20px;
+      }
+  </style>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="../" class="navbar-brand">Rescate Animal</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="themes">
+                <li><a href="../default/">Default</a></li>
+                <li class="divider"></li>
+                <li><a href="../cerulean/">Cerulean</a></li>
+                <li><a href="../cosmo/">Cosmo</a></li>
+                <li><a href="../cyborg/">Cyborg</a></li>
+                <li><a href="../darkly/">Darkly</a></li>
+                <li><a href="../flatly/">Flatly</a></li>
+                <li><a href="../journal/">Journal</a></li>
+                <li><a href="../lumen/">Lumen</a></li>
+                <li><a href="../paper/">Paper</a></li>
+                <li><a href="../readable/">Readable</a></li>
+                <li><a href="../sandstone/">Sandstone</a></li>
+                <li><a href="../simplex/">Simplex</a></li>
+                <li><a href="../slate/">Slate</a></li>
+                <li><a href="../spacelab/">Spacelab</a></li>
+                <li><a href="../superhero/">Superhero</a></li>
+                <li><a href="../united/">United</a></li>
+                <li><a href="../yeti/">Yeti</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="../help/">Help</a>
+            </li>
+            <li>
+              <a href="http://news.bootswatch.com">Blog</a>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Download <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="download">
+                <li><a href="./bootstrap.min.css">bootstrap.min.css</a></li>
+                <li><a href="./bootstrap.css">bootstrap.css</a></li>
+                <li class="divider"></li>
+                <li><a href="./variables.less">variables.less</a></li>
+                <li><a href="./bootswatch.less">bootswatch.less</a></li>
+                <li class="divider"></li>
+                <li><a href="./_variables.scss">_variables.scss</a></li>
+                <li><a href="./_bootswatch.scss">_bootswatch.scss</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://builtwithbootstrap.com/" target="_blank">Built With Bootstrap</a></li>
+            <li><a href="https://wrapbootstrap.com/?ref=bsw" target="_blank">WrapBootstrap</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+      <div class="container">
+
+          <div><br/><br/><br/></div>
+
+          <div class="navbar navbar-inverse">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Brand</a>
+              </div>
+              <div class="navbar-collapse collapse navbar-inverse-collapse">
+                  <ul class="nav navbar-nav">
+                      <li class="active"><a href="#">Active</a></li>
+                      <li><a href="#">Link</a></li>
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                          <ul class="dropdown-menu">
+                              <li><a href="#">Action</a></li>
+                              <li><a href="#">Another action</a></li>
+                              <li><a href="#">Something else here</a></li>
+                              <li class="divider"></li>
+                              <li class="dropdown-header">Dropdown header</li>
+                              <li><a href="#">Separated link</a></li>
+                              <li><a href="#">One more separated link</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+                  <form class="navbar-form navbar-left">
+                      <input type="text" class="form-control col-lg-8" placeholder="Search">
+                  </form>
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a href="#">Link</a></li>
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                          <ul class="dropdown-menu">
+                              <li><a href="#">Action</a></li>
+                              <li><a href="#">Another action</a></li>
+                              <li><a href="#">Something else here</a></li>
+                              <li class="divider"></li>
+                              <li><a href="#">Separated link</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+
+          <ul class="timeline">
+              <li>
+                  <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+                  <div class="timeline-panel">
+                      <div class="timeline-heading">
+                          <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+                      </div>
+                      <div class="timeline-body">
+                          <img src="http://www.animalessinhogar.com.uy/adoptar/photos/perros/82.jpg" class="img-responsive" alt="Responsive image">
+                          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                      </div>
+                  </div>
+              </li>
+              <li class="timeline-inverted">
+                  <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+                  <div class="timeline-panel">
+                      <div class="timeline-heading">
+                          <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                      </div>
+                      <div class="timeline-body">
+                          <img src="http://www.animalessinhogar.com.uy/adoptar/photos/perros/70.jpg" class="img-responsive" alt="Responsive image">
+                          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                          <p>Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.</p>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
+                  <div class="timeline-panel">
+                      <div class="timeline-heading">
+                          <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                      </div>
+                      <div class="timeline-body">
+                          <img src="http://www.animalessinhogar.com.uy/adoptar/photos/perros/73.jpg" class="img-responsive" alt="Responsive image">
+                          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                      </div>
+                  </div>
+              </li>
+              <li class="timeline-inverted">
+                  <div class="timeline-panel">
+                      <div class="timeline-heading">
+                          <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                      </div>
+                      <div class="timeline-body">
+                          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
+                  <div class="timeline-panel">
+                      <div class="timeline-heading">
+                          <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                      </div>
+                      <div class="timeline-body">
+                          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                          <hr>
+                          <div class="btn-group">
+                              <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                                  <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu" role="menu">
+                                  <li><a href="#">Action</a></li>
+                                  <li><a href="#">Another action</a></li>
+                                  <li><a href="#">Something else here</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="#">Separated link</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <div class="timeline-panel">
+                      <div class="timeline-heading">
+                          <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                      </div>
+                      <div class="timeline-body">
+                          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                      </div>
+                  </div>
+              </li>
+              <li class="timeline-inverted">
+                  <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+                  <div class="timeline-panel">
+                      <div class="timeline-heading">
+                          <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                      </div>
+                      <div class="timeline-body">
+                          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                      </div>
+                  </div>
+              </li>
+          </ul>
+      </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../papercss/assets/js/bootswatch.js"></script>
+  </body>
+</html>
